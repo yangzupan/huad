@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - 页面未找到</title>
+    <meta name="keywords" content="杨祖攀,杨攀,祖攀,攀哥">
+    <meta name="description" content="杨祖攀，一个正在为理想而奋斗的小男孩。">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+        :root {
+            --theme-color: #3b82f6;
+            --white: #ffffff;
+            --bg-color: #ffffff;
+            --bg-color-secondary: #f9fafb;
+            --bg-color-tertiary: #f3f4f6;
+            --font-color: #111827;
+            --font-color-secondary: #1f2937;
+            --font-color-tertiary: #374151;
+            --hover-color: var(--theme-color);
+            --border-color: #e5e7eb;
+
+            --icon-size: 70px;
+            --scrollbar: #3c3c4366;
+        }
+
+        [data-theme='dark'] {
+            --bg-color: #111827;
+            --bg-color-secondary: #1f2937;
+            --bg-color-tertiary: #374151;
+            --font-color: #9ca3af;
+            --font-color-secondary: #6b7280;
+            --font-color-tertiary: #4b5563;
+
+            --border-color: #374151;
+            --scrollbar: #f9fafb66;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            background: var(--bg-color);
+        }
+
+        main .title {
+            font-size: 5rem;
+            color: var(--font-color);
+
+        }
+
+        main .text {
+            font-size: 1.3rem;
+            color: var(--font-color-secondary);
+        }
+
+        main .tip {
+            font-size: 1rem;
+            color: var(--font-color-tertiary);
+        }
+        main .link{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        main a {
+            font-size: 14px;
+            text-decoration: none;
+            background: var(--bg-color-tertiary);
+            color: var(--font-color);
+            border: 1px solid var(--border-color);
+            border-radius: 9999px;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        main a:hover {
+            background: var(--theme-color);
+            color: var(--white);
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="title">404</div>
+        <div class="text">很抱歉，您访问的页面不存在！</div>
+        <div class="tip">请仔细检查您输入的网址是否正确。</div>
+        <div class="link">
+            <a href="javascript:history.go(-1)">返回上一页</a>
+            <a href="/">返回首页</a>
+        </div>
+    </main>
+    <script src="https://cdn.yangzupan.com/libs/theme-change/2.5.0/toggle.js"></script>
+</body>
+
+</html>
